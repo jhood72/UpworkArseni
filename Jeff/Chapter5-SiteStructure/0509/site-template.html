@@ -104,6 +104,24 @@
 
             </div>
             <!--Question - Offset, this is confussing?-->
+            <!-- Answer - By setting offset you are saying to your div to move right on the space corresponding to the number. 
+            So if you want to move your blockquote 2 grids right you might do it bad way and good way. The bad way is to create new div and give it a class col-sm-2, like so:
+              
+                <div class="col-sm-2 this-is-fake-empty-div-to-move-original-div-to-the-right"></div>
+                <div class="col-sm-2">Here goes original div</div>
+
+            Above variant is bad: you add one more div just to push your target div to the right on 2 grids. So the right thing to do here is to use offset:
+                
+                <div class="col-sm-2 col-sm-offset-2">Here goes original div</div>
+
+            Like you do in your code. So it's simply pushes your div to the right on the distance of given offset value(your case 2)
+
+            Here is the link to take a look at.
+            http://www.w3schools.com/bootstrap/bootstrap_grid_examples.asp
+            You can find explanation about offset almost at the bottom of the page and click "try it yourself" button to play around a little with offset. 
+            If you have any questions don't hesitate to write me in skype or add here your question and ping me, as agreed! Have a good day!
+ 
+            -->
             <div class="col-sm-4 col-sm-offset-2">
                 <blockquote>
                     <p>&ldquo;This App has completely revolutionized the way we travel, we will never have to wait around
