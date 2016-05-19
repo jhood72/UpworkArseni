@@ -1,0 +1,9 @@
+Notes on break points:
+
+sm = under 768px phone
+
+md = 992px tablet
+
+lg = 1200px desktop
+
+&ldquo;
