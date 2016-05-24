@@ -106,6 +106,10 @@ hr {
     background-color: #e9e6df;
 }
 
+.bpad {
+    margin-bottom: 30px;
+}
+
 @media(min-width: 768px) {
     .carousel-inner > .item {
         height: 700px;
