@@ -47,6 +47,9 @@ b, strong {
     padding-top: 20px;
 }
 
+.padded {
+    padding: 100px 15px;
+}
 .marketing {
     background-color: #e9e6df;
 }
@@ -92,8 +95,19 @@ hr {
     padding: 0 10px;
 }
 
+.blog h1 a {
+    color: #4b8575;
+}
+.blog p a {
+    color: #ed7337;
+}
+
+.sidebar {
+    background-color: #e9e6df;
+}
+
 @media(min-width: 768px) {
     .carousel-inner > .item {
-        height: 500px;
+        height: 700px;
     }
 }
