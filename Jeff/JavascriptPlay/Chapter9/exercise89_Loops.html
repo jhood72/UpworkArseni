@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javascript Loops</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container fixed">
+
+    <h3>Loops</h3>
+    <p>Remember, always try to right your code only once.</p>
+        <div >
+            <blockquote cite="http://">
+                DRY = Don't Repeat Yourself
+            </blockquote>
+        </div>
+
+        <div class="while-loops">
+            <h4>While Loops</h4>
+            <p>A while loop repeats the code WHILE the condition is true</p>
+            <pre>
+                while(someCondition){
+                    //run some code
+                }
+            </pre>
+
+            <p>A good example of that would be:</p>
+            <pre>
+                var count = 1;
+                while(count < 6) {
+                    console.log("count is: " + count);
+                    <!-- Below increases count by one each time. You must do increment the count to stop the loop, if you leave this off you create an infite loop because it
+                it never reach the end.-->
+                    count++;
+                }
+            </pre>
+
+            <p>Now to run the exact code as above <em>BUT</em> add two to it each time:</p>
+            <pre>
+                var count = 1;
+                while(count < 6) {
+                    console.log("count is: " + count);
+                    <strong>count+=2;</strong>
+                }
+            </pre>
+
+            <p>Another while loop example, this time printing each letter of the work "hello"</p>
+            <pre>
+
+                <!-- Question = does length counting start at 1 but index counting start at 0?-->
+                var str = "hello";
+                var count = 0;
+
+                while(count < str.length) {
+                    console.log(str[count]);
+                    count++;
+                }
+
+                <strong>Remember: the length is always 1 great than the highet index of a string.</strong>
+            </pre>
+
+
+
+
+        </div><!--End While Loop Notes -->
+
+
+        <div class="whileloop-questions">
+            <h3>Question I have about loops</h3>
+            <p>???</p>
+            <pre>
+                var num = 1;
+                while(num <= 20) {
+                    if(num % 4 === 0) {
+                        console.log(num);
+                     }
+                      num++;
+                  }
+            </pre>
+            <p>Using -- in a Loop. This problem creates an infinite loop!!!!</p>
+            <pre>
+                var num = 100;
+                while(num < 150) {
+                    console.log(num + 1);
+                    num--;
+                }
+            </pre>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>
